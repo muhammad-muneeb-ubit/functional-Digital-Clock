@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock | Muhammad Muneeb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: white;text-align: center;">Digital Clock</h1>
+        <div class="time">
+            <div id="hr"></div>
+            <div id="min"></div>
+            <div id="sec"></div>
+            <div id="amPm"></div>
+        </div>
+        <div class="buttons">
+            <button id="start" onclick="startClock()">Start</button>
+            <!-- <button id="reset" onclick="console.log(reference)">Stop</button> -->
+            <button id="reset" onclick="clearInterval(reference)">Stop</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
